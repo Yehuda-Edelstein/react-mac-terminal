@@ -1,8 +1,8 @@
 {
-  "name": "react-mac-terminal-example",
+  "name": "react-mac-terminal",
   "homepage": ".",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A customizable React component that renders a terminal-like interface with built in commands, customizable themes and branches, and much more.",
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
     "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
