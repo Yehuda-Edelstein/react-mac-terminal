@@ -1,6 +1,6 @@
 {
   "name": "react-mac-terminal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customizable React component that renders a terminal-like interface with built in commands, customizable themes and branches, and much more.",
   "author": "Yehuda-Edelstein",
   "license": "MIT",
