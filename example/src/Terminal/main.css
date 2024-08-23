@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'SF Mono';
+  src: url('./../assets/SF-Mono-Medium.otf') format('opentype');
+}
+
+.icon {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.icon:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+.icon img {
+  width: 90px;
+}
+
+.terminal {
+  font-family: 'SF Mono';
+  font-weight: bold;
+  border: 1px solid #646464;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.terminal .terminal-header {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 4px 8px;
+  background-color: #444;
+}
+
+.terminal
+  .terminal-header
+  .terminal-buttons-container:hover
+  .terminal-button-yellow::before,
+.terminal
+  .terminal-header
+  .terminal-buttons-container:hover
+  .terminal-button-green::before,
+.terminal
+  .terminal-header
+  .terminal-buttons-container:hover
+  .terminal-button-green::after {
+  opacity: 0.5;
+}
+
+.terminal .terminal-header .terminal-buttons-container .terminal-button {
+  display: inline-block;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal .terminal-header .terminal-buttons-container .terminal-button-red {
+  background-color: #ff5f57;
+  position: relative;
+}
+
+.terminal
+  .terminal-header
+  .terminal-buttons-container
+  .terminal-button-red:active {
+  opacity: 0.5;
+}
+
+.terminal
+  .terminal-header
+  .terminal-buttons-container
+  .terminal-button-red::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  opacity: 0.5;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.terminal .terminal-header .terminal-buttons-container .terminal-button-yellow {
+  background-color: #ffc057;
+  position: relative;
+}
+
+.terminal
+  .terminal-header
+  .terminal-buttons-container
+  .terminal-button-yellow::before {
+  /* content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  opacity: 0;
+  height: 1.5px;
+  border-radius: 0.5px;
+  background-color: black; */
+}
+
+.terminal .terminal-header .terminal-buttons-container .terminal-button-green {
+  background-color: #32d74b;
+  position: relative;
+}
+
+.terminal
+  .terminal-header
+  .terminal-buttons-container
+  .terminal-button-green::before {
+  /* content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(-45deg, transparent 60%, black 50%);
+  opacity: 0;
+  border-radius: 1px; */
+}
+
+.terminal
+  .terminal-header
+  .terminal-buttons-container
+  .terminal-button-green::after {
+  /* content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, transparent 60%, black 50%);
+  opacity: 0;
+  border-radius: 1px; */
+}
+
+.terminal .terminal-body {
+  width: 570px;
+  /* max-width: 600px; */
+  min-width: 300px;
+  min-height: 365px;
+  max-height: 365px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow: auto;
+  height: 100%;
+  font-size: 11px;
+  padding: 3px 4px;
+  position: relative;
+}
+.terminal .input,
+.terminal .submitted {
+  margin-top: 15px;
+}
+.terminal .output,
+.terminal .list,
+.terminal .first-input {
+  margin-bottom: -15px;
+}
+.terminal .terminal-pre p {
+  margin: 0;
+}
+.terminal form {
+  position: relative;
+  display: flex;
+}
+
+.terminal .money {
+  position: absolute;
+}
+
+.terminal .terminal-input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 11px;
+  text-indent: 12px;
+  line-height: 13px;
+  caret-color: transparent;
+}
+
+.terminal .text-caret {
+  border-right: 7px solid white;
+  opacity: 0.5;
+  position: absolute;
+  height: 13px;
+  margin-left: 12px;
+}
+
+.terminal .terminal-output {
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 620px) {
+  .terminal .terminal-body {
+    width: 90vw;
+  }
+}

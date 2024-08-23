@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-mac-terminal'
 import 'react-mac-terminal/dist/index.css'
+import { Terminal } from './Terminal/Terminal'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Terminal />
 }
 
 export default App
